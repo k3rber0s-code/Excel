@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace Excel
 {
@@ -6,7 +7,9 @@ namespace Excel
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Regex regex = new Regex(@"(?<=[()+*/-])|(?=[()+*/-])");
+            string[] parts = regex.Split(@"A1+AZ3/BH2*J4-XXDS5");
+            ExcelTable e = new ExcelTable("./table.txt");
         }
     }
 }
