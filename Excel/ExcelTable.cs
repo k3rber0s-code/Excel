@@ -12,7 +12,7 @@ namespace Excel
     public class ErrorMessages
     {
         public const string InvalidInput = "#INVVAL";
-        public const string MissingOperator = "#MISSOP";
+        public const string MissingOperator = "#MISSOP"; 
         public const string Error = "#ERROR";
     }
     class ExcelTable
